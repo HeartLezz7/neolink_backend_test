@@ -1,3 +1,1 @@
-How to run test
-
-go test -v 
+Run test with command: go test -v
