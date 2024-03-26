@@ -35,3 +35,25 @@ func TestCase3(t *testing.T) {
 	}
 
 }
+
+func TestErrorInput(t *testing.T) {
+	input := "AAWS"
+	want := 0
+
+	result := AlienDecode(input)
+
+	if result != want {
+		t.Fatalf("if input = %v result should be %v but get %v", input, want, result)
+	}
+}
+
+func TestEmptyString(t *testing.T) {
+	input := ""
+	want := 0
+
+	result := AlienDecode(input)
+
+	if result != want {
+		t.Fatalf("if input = %v result should be %v but get %v", input, want, result)
+	}
+}
